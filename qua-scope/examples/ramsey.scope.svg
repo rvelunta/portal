@@ -1,0 +1,333 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="394" viewBox="0 0 1180 394" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<style>
+      .bg{fill:#fbfbfd}.title{fill:#151823;font-size:15px;font-weight:700}
+      .sub{fill:#6b7280;font-size:10.5px}.note{fill:#8a90a0;font-size:10px}
+      .lane{fill:#ffffff;stroke:#e7e9f0}.lane.alt{fill:#f7f8fc;stroke:#e7e9f0}
+      .zero{stroke:#c9cede;stroke-dasharray:2 3}.grid{stroke:#e7e9f0}
+      .axis{stroke:#aeb4c6}.tick{fill:#8a90a0;font-size:9.5px}
+      .ellbl{fill:#151823;font-size:11.5px;font-weight:700}
+      .elmeta{fill:#8a90a0;font-size:9px}.chlbl{fill:#6b7280;font-size:9.5px}
+      .seglbl{fill:#151823;font-size:9.5px}.seglbl.thin{fill:#5a6070;font-size:9px}
+      .stub{stroke:#aeb4c6;stroke-width:.8;stroke-dasharray:1 2}
+      .acq{fill:url(#hatch);stroke:#12b886;stroke-dasharray:3 2}
+      .acqlbl{fill:#0b7a5c;font-size:9px}
+      .mk.align{stroke:#e64980}.mk.pause{stroke:#f76707}.mk.branch{stroke:#ae3ec9}
+      .mklbl{font-size:10px;fill:#6b7280}.mklbl.align{fill:#e64980}
+      .mklbl.branch{fill:#ae3ec9}.mklbl.pause{fill:#f76707}
+      .brk{fill:url(#zig);stroke:none}.brklbl{fill:#8a90a0;font-size:9px}
+      .gap{fill:url(#gapzig);stroke:#c9cede;stroke-dasharray:2 2}
+      .gaplbl{fill:#8a90a0;font-size:8.5px}
+    
+      .wave{fill-opacity:.32;stroke-width:1.1;stroke-linejoin:round}
+      .seg{fill:transparent;stroke:none;pointer-events:all}
+      .seg.rt{fill:#ae3ec9;fill-opacity:.07}
+      .acq{fill-opacity:.5;stroke-width:1}
+      .mk{stroke-width:1;stroke-dasharray:3 3;opacity:.75}
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    @media (prefers-color-scheme: dark){
+      .bg{fill:#0f1117}.title{fill:#f2f4f8}.sub{fill:#9aa1b2}.note{fill:#767d8f}
+      .lane{fill:#161923;stroke:#242938}.lane.alt{fill:#12151e;stroke:#242938}
+      .zero{stroke:#39405a}.grid{stroke:#232838}.axis{stroke:#4a5268}
+      .tick{fill:#8a92a6}.ellbl{fill:#f2f4f8}.elmeta{fill:#767d8f}
+      .chlbl{fill:#9aa1b2}.seglbl{fill:#e7eaf2}.acqlbl{fill:#3ddbaa}
+      .mklbl{fill:#9aa1b2}
+    }</style>
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#12b886" fill-opacity="0.10"/><line x1="0" y1="0" x2="0" y2="6" stroke="#12b886" stroke-width="1.6" stroke-opacity="0.35"/></pattern><pattern id="zig" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><rect width="6" height="6" fill="#8a90a0" fill-opacity="0.10"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8a90a0" stroke-width="2" stroke-opacity="0.45"/></pattern><pattern id="gapzig" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0,7 L3.5,0 L7,7" fill="none" stroke="#aeb4c6" stroke-width="1" stroke-opacity="0.55"/></pattern></defs>
+<rect class="bg" x="0" y="0" width="1180" height="394"/>
+<text class="title" x="14" y="24">ramsey.py</text>
+<text class="sub" x="14" y="40">2 elements, 8 pulses, 4 measurements, 43.3 us total  |  envelope, 2 iteration(s) per loop</text>
+<line class="grid" x1="190.0" y1="72" x2="190.0" y2="320"/>
+<text class="tick" x="190.0" y="335" text-anchor="middle">0 ns</text>
+<line class="grid" x1="279.5" y1="72" x2="279.5" y2="320"/>
+<text class="tick" x="279.5" y="335" text-anchor="middle">500 ns</text>
+<line class="grid" x1="368.9" y1="72" x2="368.9" y2="320"/>
+<text class="tick" x="368.9" y="335" text-anchor="middle">1 us</text>
+<line class="grid" x1="478.5" y1="72" x2="478.5" y2="320"/>
+<text class="tick" x="478.5" y="335" text-anchor="middle">11 us</text>
+<line class="grid" x1="568.0" y1="72" x2="568.0" y2="320"/>
+<text class="tick" x="568.0" y="335" text-anchor="middle">11.5 us</text>
+<line class="grid" x1="664.8" y1="72" x2="664.8" y2="320"/>
+<text class="tick" x="664.8" y="335" text-anchor="middle">20.89 us</text>
+<line class="grid" x1="762.7" y1="72" x2="762.7" y2="320"/>
+<text class="tick" x="762.7" y="335" text-anchor="middle">22 us</text>
+<line class="grid" x1="852.2" y1="72" x2="852.2" y2="320"/>
+<text class="tick" x="852.2" y="335" text-anchor="middle">22.5 us</text>
+<line class="grid" x1="913.3" y1="72" x2="913.3" y2="320"/>
+<text class="tick" x="913.3" y="335" text-anchor="middle">31.7 us</text>
+<line class="grid" x1="961.8" y1="72" x2="961.8" y2="320"/>
+<text class="tick" x="961.8" y="335" text-anchor="middle">32.5 us</text>
+<line class="grid" x1="1051.3" y1="72" x2="1051.3" y2="320"/>
+<text class="tick" x="1051.3" y="335" text-anchor="middle">33 us</text>
+<line class="axis" x1="190" y1="320" x2="1166" y2="320"/>
+<rect class="lane" x="190" y="72" width="976" height="62"/>
+<line class="zero" x1="190" y1="103.0" x2="1166" y2="103.0"/>
+<rect x="14" y="76" width="3" height="54" fill="#4c6ef5" rx="1.5"/>
+<text class="ellbl" x="24" y="88">qubit<title>qubit</title></text>
+<text class="elmeta" x="24" y="101">IF 50 MHz  I:con…<title>IF 50 MHz  I:con1/1 Q:con1/2</title></text>
+<text class="chlbl" x="184" y="106" text-anchor="end">I &#177;0.125V</text>
+<polygon class="wave" fill="#4c6ef5" stroke="#4c6ef5" points="190,98.74 191,90.46 192,82.97 193,81.00 194,82.01 195,88.80 196,97.69 197,101.87 198,103.00 199,103.00 200,98.74 201,90.46 202,82.97 203,81.00 204,82.01 205,88.80 206,97.69 207,101.87 208,103.00 411,103.00 412,99.63 413,93.68 414,84.18 415,81.00 416,81.00 417,87.15 418,96.50 419,100.99 420,103.00 425,103.00 426,100.99 427,96.50 428,87.15 429,81.00 430,81.00 431,84.18 432,93.68 433,99.63 434,103.00 664,103.00 665,98.74 666,90.46 667,82.97 668,81.00 669,82.01 670,88.80 671,97.69 672,101.87 673,103.00 674,103.00 675,98.74 676,90.46 677,82.97 678,81.00 679,82.01 680,88.80 681,97.69 682,101.87 683,103.00 912,103.00 913,100.37 914,95.16 915,85.60 916,81.00 917,81.00 918,85.60 919,95.16 920,100.37 921,103.00 926,103.00 927,101.48 928,97.69 929,88.80 930,81.34 931,81.00 932,82.97 933,92.11 934,98.74 935,103.00 1166,103.00 1166,103.00 935,103.00 934,103.00 933,103.00 932,103.00 931,103.00 930,103.00 929,103.00 928,103.00 927,103.00 926,103.00 921,103.00 920,103.00 919,103.00 918,103.00 917,103.00 916,103.00 915,103.00 914,103.00 913,103.00 912,103.00 683,103.00 682,103.00 681,103.00 680,103.00 679,103.00 678,103.00 677,103.00 676,103.00 675,103.00 674,103.00 673,103.00 672,103.00 671,103.00 670,103.00 669,103.00 668,103.00 667,103.00 666,103.00 665,103.00 664,103.00 434,103.00 433,103.00 432,103.00 431,103.00 430,103.00 429,103.00 428,103.00 427,103.00 426,103.00 425,103.00 420,103.00 419,103.00 418,103.00 417,103.00 416,103.00 415,103.00 414,103.00 413,103.00 412,103.00 411,103.00 208,103.00 207,103.00 206,103.00 205,103.00 204,103.00 203,103.00 202,103.00 201,103.00 200,103.00 199,103.00 198,103.00 197,103.00 196,103.00 195,103.00 194,103.00 193,103.00 192,103.00 191,103.00 190,103.00"/>
+<rect class="seg" x="190.0" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+0 ns -&gt; 40 ns   40 ns
+amp x1
+IF 50 MHz
+iteration 0.0
+ramsey.py:22</title></rect>
+<rect class="seg" x="200.0" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+56 ns -&gt; 96 ns   40 ns
+amp x1
+IF 50 MHz
+frame 0.032pi
+iteration 0.0
+ramsey.py:26</title></rect>
+<text class="seglbl thin" x="202.0" y="84">x90</text>
+<line class="stub" x1="200.0" y1="86" x2="200.0" y2="130"/>
+<rect class="seg" x="412.3" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+10.1 us -&gt; 10.14 us   40 ns
+amp x1
+IF 50 MHz
+iteration 0.1
+ramsey.py:22</title></rect>
+<rect class="seg" x="426.6" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+10.18 us -&gt; 10.22 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.08pi
+iteration 0.1
+ramsey.py:26</title></rect>
+<text class="seglbl thin" x="428.6" y="84">x90</text>
+<line class="stub" x1="426.6" y1="86" x2="426.6" y2="130"/>
+<rect class="seg" x="665.0" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+20.9 us -&gt; 20.94 us   40 ns
+amp x1
+IF 50 MHz
+iteration 1.0
+ramsey.py:22</title></rect>
+<rect class="seg" x="675.0" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+20.95 us -&gt; 20.99 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.032pi
+iteration 1.0
+ramsey.py:26</title></rect>
+<text class="seglbl thin" x="677.0" y="84">x90</text>
+<line class="stub" x1="675.0" y1="86" x2="675.0" y2="130"/>
+<rect class="seg" x="913.4" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+31.7 us -&gt; 31.74 us   40 ns
+amp x1
+IF 50 MHz
+iteration 1.1
+ramsey.py:22</title></rect>
+<rect class="seg" x="927.8" y="74" width="7.2" height="58"><title>x90  (pi_half_pulse)
+31.78 us -&gt; 31.82 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.08pi
+iteration 1.1
+ramsey.py:26</title></rect>
+<text class="seglbl thin" x="929.8" y="84">x90</text>
+<line class="stub" x1="927.8" y1="86" x2="927.8" y2="130"/>
+<rect class="lane alt" x="190" y="134" width="976" height="62"/>
+<line class="zero" x1="190" y1="165.0" x2="1166" y2="165.0"/>
+<text class="chlbl" x="184" y="168" text-anchor="end">Q flat 0V</text>
+<polygon class="wave" fill="#4c6ef5" stroke="#4c6ef5" points="190,165.00 1166,165.00 1166,165.00 190,165.00"/>
+<rect class="seg" x="190.0" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+0 ns -&gt; 40 ns   40 ns
+amp x1
+IF 50 MHz
+iteration 0.0
+ramsey.py:22</title></rect>
+<rect class="seg" x="200.0" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+56 ns -&gt; 96 ns   40 ns
+amp x1
+IF 50 MHz
+frame 0.032pi
+iteration 0.0
+ramsey.py:26</title></rect>
+<rect class="seg" x="412.3" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+10.1 us -&gt; 10.14 us   40 ns
+amp x1
+IF 50 MHz
+iteration 0.1
+ramsey.py:22</title></rect>
+<rect class="seg" x="426.6" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+10.18 us -&gt; 10.22 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.08pi
+iteration 0.1
+ramsey.py:26</title></rect>
+<rect class="seg" x="665.0" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+20.9 us -&gt; 20.94 us   40 ns
+amp x1
+IF 50 MHz
+iteration 1.0
+ramsey.py:22</title></rect>
+<rect class="seg" x="675.0" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+20.95 us -&gt; 20.99 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.032pi
+iteration 1.0
+ramsey.py:26</title></rect>
+<rect class="seg" x="913.4" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+31.7 us -&gt; 31.74 us   40 ns
+amp x1
+IF 50 MHz
+iteration 1.1
+ramsey.py:22</title></rect>
+<rect class="seg" x="927.8" y="136" width="7.2" height="58"><title>x90  (pi_half_pulse)
+31.78 us -&gt; 31.82 us   40 ns
+amp x1
+IF 50 MHz
+frame 0.08pi
+iteration 1.1
+ramsey.py:26</title></rect>
+<rect class="lane" x="190" y="196" width="976" height="62"/>
+<line class="zero" x1="190" y1="227.0" x2="1166" y2="227.0"/>
+<rect x="14" y="200" width="3" height="54" fill="#12b886" rx="1.5"/>
+<text class="ellbl" x="24" y="212">resonator<title>resonator</title></text>
+<text class="elmeta" x="24" y="225">IF 60 MHz  I:con…<title>IF 60 MHz  I:con1/3 Q:con1/4</title></text>
+<text class="chlbl" x="184" y="230" text-anchor="end">I &#177;0.08V</text>
+<polygon class="wave" fill="#12b886" stroke="#12b886" points="190,227.00 206,227.00 207,205.00 350,205.00 351,227.00 458,227.00 459,205.00 603,205.00 604,227.00 707,227.00 708,205.00 851,205.00 852,227.00 960,227.00 961,205.00 1104,205.00 1105,227.00 1166,227.00 1166,227.00 1105,227.00 1104,227.00 961,227.00 960,227.00 852,227.00 851,227.00 708,227.00 707,227.00 604,227.00 603,227.00 459,227.00 458,227.00 351,227.00 350,227.00 207,227.00 206,227.00 190,227.00"/>
+<rect class="seg" x="207.2" y="198" width="143.1" height="58"><title>readout  (readout_pulse)
+96 ns -&gt; 896 ns   800 ns
+amp x1
+IF 60 MHz
+iteration 0.0
+ramsey.py:28</title></rect>
+<text class="seglbl" x="278.7" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="459.9" y="198" width="143.1" height="58"><title>readout  (readout_pulse)
+10.9 us -&gt; 11.7 us   800 ns
+amp x1
+IF 60 MHz
+iteration 0.1
+ramsey.py:28</title></rect>
+<text class="seglbl" x="531.5" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="708.4" y="198" width="143.1" height="58"><title>readout  (readout_pulse)
+21.7 us -&gt; 22.5 us   800 ns
+amp x1
+IF 60 MHz
+iteration 1.0
+ramsey.py:28</title></rect>
+<text class="seglbl" x="779.9" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="961.1" y="198" width="143.1" height="58"><title>readout  (readout_pulse)
+32.5 us -&gt; 33.3 us   800 ns
+amp x1
+IF 60 MHz
+iteration 1.1
+ramsey.py:28</title></rect>
+<text class="seglbl" x="1032.7" y="208" text-anchor="middle">readout</text>
+<rect class="lane alt" x="190" y="258" width="976" height="62"/>
+<line class="zero" x1="190" y1="289.0" x2="1166" y2="289.0"/>
+<text class="chlbl" x="184" y="292" text-anchor="end">Q flat 0V</text>
+<polygon class="wave" fill="#12b886" stroke="#12b886" points="190,289.00 1166,289.00 1166,289.00 190,289.00"/>
+<rect class="seg" x="207.2" y="260" width="143.1" height="58"><title>readout  (readout_pulse)
+96 ns -&gt; 896 ns   800 ns
+amp x1
+IF 60 MHz
+iteration 0.0
+ramsey.py:28</title></rect>
+<rect class="seg" x="459.9" y="260" width="143.1" height="58"><title>readout  (readout_pulse)
+10.9 us -&gt; 11.7 us   800 ns
+amp x1
+IF 60 MHz
+iteration 0.1
+ramsey.py:28</title></rect>
+<rect class="seg" x="708.4" y="260" width="143.1" height="58"><title>readout  (readout_pulse)
+21.7 us -&gt; 22.5 us   800 ns
+amp x1
+IF 60 MHz
+iteration 1.0
+ramsey.py:28</title></rect>
+<rect class="seg" x="961.1" y="260" width="143.1" height="58"><title>readout  (readout_pulse)
+32.5 us -&gt; 33.3 us   800 ns
+amp x1
+IF 60 MHz
+iteration 1.1
+ramsey.py:28</title></rect>
+<rect class="gap" x="386.1" y="72" width="26" height="248"><title>idle 8.999 us collapsed
+1.096 us -> 10.1 us</title></rect>
+<text class="gaplbl" x="399.1" y="335" text-anchor="middle">8.999 us</text>
+<rect class="gap" x="433.7" y="72" width="26" height="248"><title>idle 679 ns collapsed
+10.22 us -> 10.89 us</title></rect>
+<text class="gaplbl" x="446.7" y="335" text-anchor="middle">679 ns</text>
+<rect class="gap" x="638.8" y="72" width="26" height="248"><title>idle 8.999 us collapsed
+11.9 us -> 20.89 us</title></rect>
+<text class="gaplbl" x="651.8" y="335" text-anchor="middle">8.999 us</text>
+<rect class="gap" x="682.2" y="72" width="26" height="248"><title>idle 703 ns collapsed
+20.99 us -> 21.7 us</title></rect>
+<text class="gaplbl" x="695.2" y="335" text-anchor="middle">703 ns</text>
+<rect class="gap" x="887.3" y="72" width="26" height="248"><title>idle 8.999 us collapsed
+22.7 us -> 31.7 us</title></rect>
+<text class="gaplbl" x="900.3" y="335" text-anchor="middle">8.999 us</text>
+<rect class="gap" x="934.9" y="72" width="26" height="248"><title>idle 679 ns collapsed
+31.82 us -> 32.49 us</title></rect>
+<text class="gaplbl" x="947.9" y="335" text-anchor="middle">679 ns</text>
+<rect class="gap" x="1140.0" y="72" width="26" height="248"><title>idle 9.8 us collapsed
+33.5 us -> 43.3 us</title></rect>
+<text class="gaplbl" x="1153.0" y="335" text-anchor="middle">9.8 us</text>
+<rect class="acq" x="243.0" y="198" width="143.1" height="120"><title>dual_demod.full(cos, out1, sin, out2, I); dual_demod.full(minus_sin, out1, cos, out2, Q)
+ADC window 296 ns - 1.096 us (800 ns)
+ramsey.py:28</title></rect>
+<text class="acqlbl" x="247.0" y="209">acquire</text>
+<rect class="acq" x="495.7" y="198" width="143.1" height="120"><title>dual_demod.full(cos, out1, sin, out2, I); dual_demod.full(minus_sin, out1, cos, out2, Q)
+ADC window 11.1 us - 11.9 us (800 ns)
+ramsey.py:28</title></rect>
+<text class="acqlbl" x="499.7" y="209">acquire</text>
+<rect class="acq" x="744.1" y="198" width="143.1" height="120"><title>dual_demod.full(cos, out1, sin, out2, I); dual_demod.full(minus_sin, out1, cos, out2, Q)
+ADC window 21.9 us - 22.7 us (800 ns)
+ramsey.py:28</title></rect>
+<text class="acqlbl" x="748.1" y="209">acquire</text>
+<rect class="acq" x="996.9" y="198" width="143.1" height="120"><title>dual_demod.full(cos, out1, sin, out2, I); dual_demod.full(minus_sin, out1, cos, out2, Q)
+ADC window 32.7 us - 33.5 us (800 ns)
+ramsey.py:28</title></rect>
+<text class="acqlbl" x="1000.9" y="209">acquire</text>
+<text class="mklbl frame" x="190.0" y="66" text-anchor="middle">φ<title>reset frame
+qubit
+0 ns  ramsey.py:21</title></text>
+<text class="mklbl frame" x="200.0" y="66" text-anchor="middle">φ<title>frame +0.032pi
+qubit
+56 ns  ramsey.py:25</title></text>
+<line class="mk align" x1="207.2" y1="72" x2="207.2" y2="320"/>
+<text class="mklbl align" x="207.2" y="66" text-anchor="middle">A<title>align
+qubit, resonator
+96 ns  ramsey.py:27</title></text>
+<text class="mklbl frame" x="412.3" y="66" text-anchor="middle">φ<title>reset frame
+qubit
+10.1 us  ramsey.py:21</title></text>
+<text class="mklbl frame" x="426.6" y="66" text-anchor="middle">φ<title>frame +0.08pi
+qubit
+10.18 us  ramsey.py:25</title></text>
+<line class="mk align" x1="459.9" y1="72" x2="459.9" y2="320"/>
+<text class="mklbl align" x="459.9" y="66" text-anchor="middle">A<title>align
+qubit, resonator
+10.9 us  ramsey.py:27</title></text>
+<text class="mklbl frame" x="665.0" y="66" text-anchor="middle">φ<title>reset frame
+qubit
+20.9 us  ramsey.py:21</title></text>
+<text class="mklbl frame" x="675.0" y="66" text-anchor="middle">φ<title>frame +0.032pi
+qubit
+20.95 us  ramsey.py:25</title></text>
+<line class="mk align" x1="708.4" y1="72" x2="708.4" y2="320"/>
+<text class="mklbl align" x="708.4" y="66" text-anchor="middle">A<title>align
+qubit, resonator
+21.7 us  ramsey.py:27</title></text>
+<text class="mklbl frame" x="913.4" y="66" text-anchor="middle">φ<title>reset frame
+qubit
+31.7 us  ramsey.py:21</title></text>
+<text class="mklbl frame" x="927.8" y="66" text-anchor="middle">φ<title>frame +0.08pi
+qubit
+31.78 us  ramsey.py:25</title></text>
+<line class="mk align" x1="961.1" y1="72" x2="961.1" y2="320"/>
+<text class="mklbl align" x="961.1" y="66" text-anchor="middle">A<title>align
+qubit, resonator
+32.5 us  ramsey.py:27</title></text>
+<rect class="brk" x="703.4" y="72" width="10" height="248"><title>for_each_ at ramsey.py:20</title></rect>
+<text class="brklbl" x="716.4" y="67">&#215;3 more</text>
+<rect class="brk" x="1161.0" y="72" width="10" height="248"><title>for_each_ at ramsey.py:20</title></rect>
+<text class="brklbl" x="1174.0" y="67">&#215;3 more</text>
+<rect class="brk" x="1161.0" y="72" width="10" height="248"><title>loop at ramsey.py:19</title></rect>
+<text class="brklbl" x="1174.0" y="67">&#215;18 more</text>
+<text class="note" x="14" y="350">A align  P pause  ? run-time branch  f IF update  φ frame  shaded = ADC window  hatched = loop truncated  zigzag = idle time collapsed (axis is not linear there)</text>
+<text class="note" x="14" y="364">Traces are pulse envelopes (--modulate draws the IF-mixed output). Timing is the ideal QUA model: no compiler overhead, no analog filter delay.</text>
+</svg>

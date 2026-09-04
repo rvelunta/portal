@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="394" viewBox="0 0 1180 394" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<style>
+      .bg{fill:#fbfbfd}.title{fill:#151823;font-size:15px;font-weight:700}
+      .sub{fill:#6b7280;font-size:10.5px}.note{fill:#8a90a0;font-size:10px}
+      .lane{fill:#ffffff;stroke:#e7e9f0}.lane.alt{fill:#f7f8fc;stroke:#e7e9f0}
+      .zero{stroke:#c9cede;stroke-dasharray:2 3}.grid{stroke:#e7e9f0}
+      .axis{stroke:#aeb4c6}.tick{fill:#8a90a0;font-size:9.5px}
+      .ellbl{fill:#151823;font-size:11.5px;font-weight:700}
+      .elmeta{fill:#8a90a0;font-size:9px}.chlbl{fill:#6b7280;font-size:9.5px}
+      .seglbl{fill:#151823;font-size:9.5px}.seglbl.thin{fill:#5a6070;font-size:9px}
+      .stub{stroke:#aeb4c6;stroke-width:.8;stroke-dasharray:1 2}
+      .acq{fill:url(#hatch);stroke:#12b886;stroke-dasharray:3 2}
+      .acqlbl{fill:#0b7a5c;font-size:9px}
+      .mk.align{stroke:#e64980}.mk.pause{stroke:#f76707}.mk.branch{stroke:#ae3ec9}
+      .mklbl{font-size:10px;fill:#6b7280}.mklbl.align{fill:#e64980}
+      .mklbl.branch{fill:#ae3ec9}.mklbl.pause{fill:#f76707}
+      .brk{fill:url(#zig);stroke:none}.brklbl{fill:#8a90a0;font-size:9px}
+      .gap{fill:url(#gapzig);stroke:#c9cede;stroke-dasharray:2 2}
+      .gaplbl{fill:#8a90a0;font-size:8.5px}
+    
+      .wave{fill-opacity:.32;stroke-width:1.1;stroke-linejoin:round}
+      .seg{fill:transparent;stroke:none;pointer-events:all}
+      .seg.rt{fill:#ae3ec9;fill-opacity:.07}
+      .acq{fill-opacity:.5;stroke-width:1}
+      .mk{stroke-width:1;stroke-dasharray:3 3;opacity:.75}
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    @media (prefers-color-scheme: dark){
+      .bg{fill:#0f1117}.title{fill:#f2f4f8}.sub{fill:#9aa1b2}.note{fill:#767d8f}
+      .lane{fill:#161923;stroke:#242938}.lane.alt{fill:#12151e;stroke:#242938}
+      .zero{stroke:#39405a}.grid{stroke:#232838}.axis{stroke:#4a5268}
+      .tick{fill:#8a92a6}.ellbl{fill:#f2f4f8}.elmeta{fill:#767d8f}
+      .chlbl{fill:#9aa1b2}.seglbl{fill:#e7eaf2}.acqlbl{fill:#3ddbaa}
+      .mklbl{fill:#9aa1b2}
+    }</style>
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#12b886" fill-opacity="0.10"/><line x1="0" y1="0" x2="0" y2="6" stroke="#12b886" stroke-width="1.6" stroke-opacity="0.35"/></pattern><pattern id="zig" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><rect width="6" height="6" fill="#8a90a0" fill-opacity="0.10"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8a90a0" stroke-width="2" stroke-opacity="0.45"/></pattern><pattern id="gapzig" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0,7 L3.5,0 L7,7" fill="none" stroke="#aeb4c6" stroke-width="1" stroke-opacity="0.55"/></pattern></defs>
+<rect class="bg" x="0" y="0" width="1180" height="394"/>
+<text class="title" x="14" y="24">spin_qubit_charge_stability.py</text>
+<text class="sub" x="14" y="40">3 elements, 12 pulses, 8 measurements, 8.356 us total  |  envelope, 2 iteration(s) per loop</text>
+<line class="grid" x1="190.0" y1="72" x2="190.0" y2="320"/>
+<text class="tick" x="190.0" y="335" text-anchor="middle">0 ns</text>
+<line class="grid" x1="306.8" y1="72" x2="306.8" y2="320"/>
+<text class="tick" x="306.8" y="335" text-anchor="middle">1 us</text>
+<line class="grid" x1="423.6" y1="72" x2="423.6" y2="320"/>
+<text class="tick" x="423.6" y="335" text-anchor="middle">2 us</text>
+<line class="grid" x1="540.4" y1="72" x2="540.4" y2="320"/>
+<text class="tick" x="540.4" y="335" text-anchor="middle">3 us</text>
+<line class="grid" x1="657.2" y1="72" x2="657.2" y2="320"/>
+<text class="tick" x="657.2" y="335" text-anchor="middle">4 us</text>
+<line class="grid" x1="774.0" y1="72" x2="774.0" y2="320"/>
+<text class="tick" x="774.0" y="335" text-anchor="middle">5 us</text>
+<line class="grid" x1="890.8" y1="72" x2="890.8" y2="320"/>
+<text class="tick" x="890.8" y="335" text-anchor="middle">6 us</text>
+<line class="grid" x1="1007.6" y1="72" x2="1007.6" y2="320"/>
+<text class="tick" x="1007.6" y="335" text-anchor="middle">7 us</text>
+<line class="grid" x1="1124.4" y1="72" x2="1124.4" y2="320"/>
+<text class="tick" x="1124.4" y="335" text-anchor="middle">8 us</text>
+<line class="axis" x1="190" y1="320" x2="1166" y2="320"/>
+<rect class="lane" x="190" y="72" width="976" height="62"/>
+<line class="zero" x1="190" y1="103.0" x2="1166" y2="103.0"/>
+<rect x="14" y="76" width="3" height="54" fill="#4c6ef5" rx="1.5"/>
+<text class="ellbl" x="24" y="88">gate_1<title>gate_1</title></text>
+<text class="elmeta" x="24" y="101">single:con1/1<title>single:con1/1</title></text>
+<text class="chlbl" x="184" y="106" text-anchor="end">out &#177;0.04V</text>
+<polygon class="wave" fill="#4c6ef5" stroke="#4c6ef5" points="190,92.00 191,92.00 192,92.00 354,92.00 355,81.00 357,81.00 358,81.00 588,81.00 589,81.00 590,92.00 591,92.00 592,92.00 821,92.00 822,81.00 824,81.00 825,81.00 1055,81.00 1056,81.00 1057,103.00 1166,103.00 1166,103.00 1057,103.00 1056,103.00 1055,81.00 825,81.00 824,92.00 822,92.00 821,92.00 592,92.00 591,103.00 590,103.00 589,103.00 588,81.00 358,81.00 357,92.00 355,92.00 354,92.00 192,92.00 191,103.00 190,103.00"/>
+<rect class="seg" x="190.0" y="74" width="1.9" height="58"><title>step  (step_pulse)
+0 ns -&gt; 16 ns   16 ns
+amp x1
+iteration 0.0
+spin_qubit_charge_stability.py:78</title></rect>
+<text class="seglbl thin" x="192.0" y="84">step</text>
+<line class="stub" x1="190.0" y1="86" x2="190.0" y2="130"/>
+<rect class="seg" x="355.4" y="74" width="1.9" height="58"><title>step  (step_pulse)
+1.416 us -&gt; 1.432 us   16 ns
+amp x1
+iteration 0.1
+spin_qubit_charge_stability.py:78</title></rect>
+<text class="seglbl thin" x="357.4" y="84">step</text>
+<line class="stub" x1="355.4" y1="86" x2="355.4" y2="130"/>
+<rect class="seg" x="589.0" y="74" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+3.416 us -&gt; 3.42 us   4 ns
+amp x1
+iteration 0
+spin_qubit_charge_stability.py:87</title></rect>
+<rect class="seg" x="589.5" y="74" width="1.9" height="58"><title>step  (step_pulse)
+3.42 us -&gt; 3.436 us   16 ns
+amp x1
+iteration 1.0
+spin_qubit_charge_stability.py:78</title></rect>
+<text class="seglbl thin" x="591.5" y="84">step</text>
+<line class="stub" x1="589.5" y1="86" x2="589.5" y2="130"/>
+<rect class="seg" x="822.6" y="74" width="1.9" height="58"><title>step  (step_pulse)
+5.416 us -&gt; 5.432 us   16 ns
+amp x1
+iteration 1.1
+spin_qubit_charge_stability.py:78</title></rect>
+<text class="seglbl thin" x="824.6" y="84">step</text>
+<line class="stub" x1="822.6" y1="86" x2="822.6" y2="130"/>
+<rect class="seg" x="1056.2" y="74" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+7.416 us -&gt; 7.42 us   4 ns
+amp x1
+iteration 1
+spin_qubit_charge_stability.py:87</title></rect>
+<text class="seglbl thin" x="1058.2" y="84">ramp_to_zero</text>
+<line class="stub" x1="1056.2" y1="86" x2="1056.2" y2="130"/>
+<rect class="lane alt" x="190" y="134" width="976" height="62"/>
+<line class="zero" x1="190" y1="165.0" x2="1166" y2="165.0"/>
+<rect x="14" y="138" width="3" height="54" fill="#12b886" rx="1.5"/>
+<text class="ellbl" x="24" y="150">gate_2<title>gate_2</title></text>
+<text class="elmeta" x="24" y="163">single:con1/2<title>single:con1/2</title></text>
+<text class="chlbl" x="184" y="168" text-anchor="end">out &#177;0.04V</text>
+<polygon class="wave" fill="#12b886" stroke="#12b886" points="190,154.00 191,154.00 192,154.00 237,154.00 238,143.00 240,143.00 241,143.00 354,143.00 355,143.00 356,154.00 357,154.00 358,154.00 471,154.00 472,143.00 474,143.00 475,143.00 588,143.00 589,143.00 590,154.00 591,154.00 592,154.00 704,154.00 705,143.00 707,143.00 708,143.00 821,143.00 822,143.00 823,143.00 824,154.00 825,154.00 938,154.00 939,143.00 941,143.00 942,143.00 1055,143.00 1056,143.00 1057,165.00 1166,165.00 1166,165.00 1057,165.00 1056,165.00 1055,143.00 942,143.00 941,154.00 939,154.00 938,154.00 825,154.00 824,165.00 823,165.00 822,165.00 821,143.00 708,143.00 707,154.00 705,154.00 704,154.00 592,154.00 591,165.00 590,165.00 589,165.00 588,143.00 475,143.00 474,154.00 472,154.00 471,154.00 358,154.00 357,165.00 356,165.00 355,165.00 354,143.00 241,143.00 240,154.00 238,154.00 237,154.00 192,154.00 191,165.00 190,165.00"/>
+<rect class="seg" x="190.0" y="136" width="1.9" height="58"><title>step  (step_pulse)
+0 ns -&gt; 16 ns   16 ns
+amp x1
+iteration 0.0.0
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="192.0" y="146">step</text>
+<line class="stub" x1="190.0" y1="148" x2="190.0" y2="192"/>
+<rect class="seg" x="238.6" y="136" width="1.9" height="58"><title>step  (step_pulse)
+416 ns -&gt; 432 ns   16 ns
+amp x1
+iteration 0.0.1
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="240.6" y="146">step</text>
+<line class="stub" x1="238.6" y1="148" x2="238.6" y2="192"/>
+<rect class="seg" x="355.4" y="136" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+1.416 us -&gt; 1.42 us   4 ns
+amp x1
+iteration 0.0
+spin_qubit_charge_stability.py:86</title></rect>
+<rect class="seg" x="355.9" y="136" width="1.9" height="58"><title>step  (step_pulse)
+1.42 us -&gt; 1.436 us   16 ns
+amp x1
+iteration 0.1.0
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="357.9" y="146">step</text>
+<line class="stub" x1="355.9" y1="148" x2="355.9" y2="192"/>
+<rect class="seg" x="472.2" y="136" width="1.9" height="58"><title>step  (step_pulse)
+2.416 us -&gt; 2.432 us   16 ns
+amp x1
+iteration 0.1.1
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="474.2" y="146">step</text>
+<line class="stub" x1="472.2" y1="148" x2="472.2" y2="192"/>
+<rect class="seg" x="589.0" y="136" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+3.416 us -&gt; 3.42 us   4 ns
+amp x1
+iteration 0.1
+spin_qubit_charge_stability.py:86</title></rect>
+<rect class="seg" x="589.5" y="136" width="1.9" height="58"><title>step  (step_pulse)
+3.42 us -&gt; 3.436 us   16 ns
+amp x1
+iteration 1.0.0
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="591.5" y="146">step</text>
+<line class="stub" x1="589.5" y1="148" x2="589.5" y2="192"/>
+<rect class="seg" x="705.8" y="136" width="1.9" height="58"><title>step  (step_pulse)
+4.416 us -&gt; 4.432 us   16 ns
+amp x1
+iteration 1.0.1
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="707.8" y="146">step</text>
+<line class="stub" x1="705.8" y1="148" x2="705.8" y2="192"/>
+<rect class="seg" x="822.6" y="136" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+5.416 us -&gt; 5.42 us   4 ns
+amp x1
+iteration 1.0
+spin_qubit_charge_stability.py:86</title></rect>
+<rect class="seg" x="823.1" y="136" width="1.9" height="58"><title>step  (step_pulse)
+5.42 us -&gt; 5.436 us   16 ns
+amp x1
+iteration 1.1.0
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="825.1" y="146">step</text>
+<line class="stub" x1="823.1" y1="148" x2="823.1" y2="192"/>
+<rect class="seg" x="939.4" y="136" width="1.9" height="58"><title>step  (step_pulse)
+6.416 us -&gt; 6.432 us   16 ns
+amp x1
+iteration 1.1.1
+spin_qubit_charge_stability.py:80</title></rect>
+<text class="seglbl thin" x="941.4" y="146">step</text>
+<line class="stub" x1="939.4" y1="148" x2="939.4" y2="192"/>
+<rect class="seg" x="1056.2" y="136" width="1.0" height="58"><title>ramp_to_zero  (ramp_to_zero)
+7.416 us -&gt; 7.42 us   4 ns
+amp x1
+iteration 1.1
+spin_qubit_charge_stability.py:86</title></rect>
+<text class="seglbl thin" x="1058.2" y="146">ramp_to_zero</text>
+<line class="stub" x1="1056.2" y1="148" x2="1056.2" y2="192"/>
+<rect class="lane" x="190" y="196" width="976" height="62"/>
+<line class="zero" x1="190" y1="227.0" x2="1166" y2="227.0"/>
+<rect x="14" y="200" width="3" height="54" fill="#f76707" rx="1.5"/>
+<text class="ellbl" x="24" y="212">sensor<title>sensor</title></text>
+<text class="elmeta" x="24" y="225">IF 150 MHz  I:co…<title>IF 150 MHz  I:con1/3 Q:con1/4</title></text>
+<text class="chlbl" x="184" y="230" text-anchor="end">I &#177;0.05V</text>
+<polygon class="wave" fill="#f76707" stroke="#f76707" points="190,227.00 191,205.00 1126,205.00 1127,227.00 1166,227.00 1166,227.00 1127,227.00 1126,227.00 191,227.00 190,227.00"/>
+<rect class="seg" x="191.9" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+16 ns -&gt; 1.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.0.0
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="250.3" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="308.7" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+1.016 us -&gt; 2.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.0.1
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="367.1" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="425.5" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+2.016 us -&gt; 3.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.1.0
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="483.9" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="542.3" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+3.016 us -&gt; 4.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.1.1
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="600.7" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="659.1" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+4.016 us -&gt; 5.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.0.0
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="717.5" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="775.9" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+5.016 us -&gt; 6.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.0.1
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="834.3" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="892.7" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+6.016 us -&gt; 7.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.1.0
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="951.1" y="208" text-anchor="middle">readout</text>
+<rect class="seg" x="1009.5" y="198" width="116.8" height="58"><title>readout  (readout_pulse)
+7.016 us -&gt; 8.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.1.1
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="seglbl" x="1067.9" y="208" text-anchor="middle">readout</text>
+<rect class="lane alt" x="190" y="258" width="976" height="62"/>
+<line class="zero" x1="190" y1="289.0" x2="1166" y2="289.0"/>
+<text class="chlbl" x="184" y="292" text-anchor="end">Q flat 0V</text>
+<polygon class="wave" fill="#f76707" stroke="#f76707" points="190,289.00 1166,289.00 1166,289.00 190,289.00"/>
+<rect class="seg" x="191.9" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+16 ns -&gt; 1.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.0.0
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="308.7" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+1.016 us -&gt; 2.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.0.1
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="425.5" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+2.016 us -&gt; 3.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.1.0
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="542.3" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+3.016 us -&gt; 4.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 0.1.1
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="659.1" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+4.016 us -&gt; 5.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.0.0
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="775.9" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+5.016 us -&gt; 6.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.0.1
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="892.7" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+6.016 us -&gt; 7.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.1.0
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="seg" x="1009.5" y="260" width="116.8" height="58"><title>readout  (readout_pulse)
+7.016 us -&gt; 8.016 us   1 us
+amp x1
+IF 150 MHz
+iteration 1.1.1
+spin_qubit_charge_stability.py:82</title></rect>
+<rect class="acq" x="222.2" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 276 ns - 1.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="226.2" y="209">acquire</text>
+<rect class="acq" x="339.0" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 1.276 us - 2.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="343.0" y="209">acquire</text>
+<rect class="acq" x="455.8" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 2.276 us - 3.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="459.8" y="209">acquire</text>
+<rect class="acq" x="572.6" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 3.276 us - 4.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="576.6" y="209">acquire</text>
+<rect class="acq" x="689.4" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 4.276 us - 5.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="693.4" y="209">acquire</text>
+<rect class="acq" x="806.2" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 5.276 us - 6.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="810.2" y="209">acquire</text>
+<rect class="acq" x="923.1" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 6.276 us - 7.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="927.1" y="209">acquire</text>
+<rect class="acq" x="1039.9" y="198" width="126.1" height="120"><title>demod.full(cos, I, out1); demod.full(sin, Q, out1)
+ADC window 7.276 us - 8.356 us (1.08 us)
+spin_qubit_charge_stability.py:82</title></rect>
+<text class="acqlbl" x="1043.9" y="209">acquire</text>
+<line class="mk align" x1="191.9" y1="72" x2="191.9" y2="320"/>
+<text class="mklbl align" x="191.9" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+16 ns  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="308.7" y1="72" x2="308.7" y2="320"/>
+<text class="mklbl align" x="308.7" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+1.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="425.5" y1="72" x2="425.5" y2="320"/>
+<text class="mklbl align" x="425.5" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+2.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="542.3" y1="72" x2="542.3" y2="320"/>
+<text class="mklbl align" x="542.3" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+3.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="659.1" y1="72" x2="659.1" y2="320"/>
+<text class="mklbl align" x="659.1" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+4.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="775.9" y1="72" x2="775.9" y2="320"/>
+<text class="mklbl align" x="775.9" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+5.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="892.7" y1="72" x2="892.7" y2="320"/>
+<text class="mklbl align" x="892.7" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+6.016 us  spin_qubit_charge_stability.py:81</title></text>
+<line class="mk align" x1="1009.5" y1="72" x2="1009.5" y2="320"/>
+<text class="mklbl align" x="1009.5" y="66" text-anchor="middle">A<title>align (all)
+gate_1, gate_2, sensor
+7.016 us  spin_qubit_charge_stability.py:81</title></text>
+<rect class="brk" x="420.5" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:79</title></rect>
+<text class="brklbl" x="433.5" y="67">&#215;3 more</text>
+<rect class="brk" x="654.1" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:79</title></rect>
+<text class="brklbl" x="667.1" y="67">&#215;3 more</text>
+<rect class="brk" x="654.1" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:77</title></rect>
+<text class="brklbl" x="667.1" y="67">&#215;1 more</text>
+<rect class="brk" x="887.7" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:79</title></rect>
+<text class="brklbl" x="900.7" y="67">&#215;3 more</text>
+<rect class="brk" x="1121.3" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:79</title></rect>
+<text class="brklbl" x="1134.3" y="67">&#215;3 more</text>
+<rect class="brk" x="1121.3" y="72" width="10" height="248"><title>loop at spin_qubit_charge_stability.py:77</title></rect>
+<text class="brklbl" x="1134.3" y="67">&#215;1 more</text>
+<text class="note" x="14" y="350">A align  P pause  ? run-time branch  f IF update  φ frame  shaded = ADC window  hatched = loop truncated</text>
+<text class="note" x="14" y="364">Traces are pulse envelopes (--modulate draws the IF-mixed output). Timing is the ideal QUA model: no compiler overhead, no analog filter delay.</text>
+</svg>
